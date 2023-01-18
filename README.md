@@ -36,16 +36,19 @@
 ## About The Project
 
 ![Screen Shot](download.png)
+![Screen Shot](download1.png)
 
-The project's motivation was to detect financial credit card transaction fraud on a dataset with around 1 million transactions listed. I designed an end-to-end data pipeline for this project. 
+The project's motivation was to predict the level of risk of clients based on the clients financial history, medical history of the family members, height, weight, BMI and several other factors like these. I designed an end-to-end data science modelling pipepline, starting from data cleaning, visualization, feature engineering to predictive modelling all combined in a jupyter notebook for ease of use. 
 
-Firstly, I did extensive data analytics using libraries like Pandas, Matplotlib, Seaborn and NumPy. I created a lot of count plots, point plots, and other graphs.
+Firstly, I did extensive data cleaning and visualizations using libraries like Pandas, Matplotlib, Seaborn and NumPy. I created a lot of count plots, point plots, and other graphs.
 
-Secondly, I did some Feature Engineering using a Dimensionality Reduction technique called PCA. Cleaning and imputing missing values was also a part of this stage.
+Secondly, I did some Feature Engineering and calculated feature importance with respect to several classifiers like Random Forest, XGBoost and Logistic Regression. I could identify the most important features involved in risk calculation.
 
-Thirdly, I did hyperparameter tuning to find the best parameters for my model. The best parameters were then selected for modelling XGBoost. 
+Thirdly, I did hyperparameter tuning to find the best parameters for my model. The best parameters were then selected for all the three classifier.
 
-Lastly, I could identify the most important features involved in fraudulent transactions.
+I compared 4 models - Random Forest, XGBoost, Logistic Regression, Max Voting and Stacked classifier out of which the Stacked classifier outperformed all the classifiers with an accuracy above 95%.
+
+
 
 
 
@@ -74,21 +77,14 @@ The python libraries mentioned in Built With
 
 1. Download the dataset
 ```sh
-https://www.kaggle.com/competitions/ieee-fraud-detection/data
+https://www.kaggle.com/competitions/prudential-life-insurance-assessment
 ```
 2. Clone the repo
 
 ```sh
-https://github.com/yashcoder007/Fraud-Transaction_Detection-using-machine-learning.git
+https://github.com/yashcoder007/Risk-Prediction-in-Life-Insurance.git
 ```
-
-3. Google Collab version.
-
-```sh
-https://colab.research.google.com/drive/1NHOtVjPaRVGKwQPgBzHhF8bTJKKPSlHO
-```
-
-4. Install packages using  conda or pip.
+3. Install packages using  conda or pip.
 For example:  "pip install -U scikit-learn" or "conda install -c conda-forge scikit-learn"
 
             jupyter
@@ -104,16 +100,17 @@ For example:  "pip install -U scikit-learn" or "conda install -c conda-forge sci
 1. Download the dataset from the link given.
 2. Clone the repo
 3. Download and use the .ipynb with jupyter notebooks.
-4. Download and use the .py with PyCharm.
+
 
 
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-* If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/yashcoder007/Fraud-Transaction_Detection-using-machine-learning/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.
+* If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/yashcoder007/
+Risk-Prediction-in-Life-Insurance/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.
 * Please make sure you check your spelling and grammar.
 * Create individual PR for each suggestion.
-* Please also read through the [Code Of Conduct](https://github.com/yashcoder007/Fraud-Transaction_Detection-using-machine-learning/blob/main/CODE_OF_CONDUCT.md) before posting your first idea as well.
+* Please also read through the [Code Of Conduct](https://github.com/yashcoder007/Risk-Prediction-in-Life-Insurance/blob/main/CODE_OF_CONDUCT.md) before posting your first idea as well.
 
 ### Creating A Pull Request
 
@@ -125,7 +122,7 @@ Contributions are what make the open source community such an amazing place to b
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/yashcoder007/Fraud-Transaction_Detection-using-machine-learning/blob/main/LICENSE.md) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/yashcoder007/Risk-Prediction-in-Life-Insurance/blob/main/LICENSE.md) for more information.
 
 ## Authors
 
